@@ -1,12 +1,13 @@
-import mouse,keyboard, time
+import mouse,keyboard, time, pyautogui as py
 
 def loop(delay):
     """ Sends a click with the given button and """
-
-    print("Press Ctrl-C to terminate while statement")
+    x, y = py.position()
     while True:
         mouse.click()
         time.sleep(delay)
+        if x != py.position()[0] or y != py.position()[1]:
+            break
 
 
 if __name__ == '__main__':
@@ -16,4 +17,4 @@ if __name__ == '__main__':
     time.sleep(1)
     print('Cookie Clicker Bot inicializando em 1...\n')
     time.sleep(1)
-    loop(1)
+    loop(0.1)
