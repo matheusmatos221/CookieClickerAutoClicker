@@ -1,4 +1,7 @@
-import mouse,keyboard, time, pyautogui as py
+import mouse
+import pyautogui as py
+import time
+
 
 def loop(delay):
     """ Sends a click with the given button and """
@@ -11,6 +14,6 @@ def loop(delay):
 
 
 if __name__ == '__main__':
-    print('Cookie Clicker Bot inicializando em 1...\n')
+    print('Cookie Clicker Bot initializing em 1...\n')
     time.sleep(1)
     loop(0.004)
