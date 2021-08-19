@@ -1,6 +1,3 @@
-# CookieClickerAutoClicker
-Autoclick to use in cookieclicker game
-
 # Notas de Atualização
 
 ## 19/08/2021 - v1.01-beta - GoldenCookie
