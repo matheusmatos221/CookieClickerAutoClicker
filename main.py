@@ -1,6 +1,8 @@
+import time
+
 import mouse
 import pyautogui as py
-import time
+
 import goldenCookieClicker
 
 
@@ -10,8 +12,8 @@ def loop(delay):
     i = 1
     while True:
         mouse.click()
-        if i == 200:
-            goldenCookieClicker.clickGoldenCookie()
+        if i == 50:
+            goldenCookieClicker.clickgoldencookie()
             i = 1
         else:
             i += 1
@@ -21,10 +23,8 @@ def loop(delay):
 
 
 if __name__ == '__main__':
-    print('Cookie Clicker Bot initializing em 2...\n')
-    time.sleep(1)
     print('Cookie Clicker Bot initializing em 1...\n')
     time.sleep(1)
-    loop(0.004)
+    loop(0.027)
     print('Cookie Clicker Bot ending em 1...\n')
     time.sleep(1)
